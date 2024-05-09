@@ -22,24 +22,18 @@ public abstract class AppleWatch extends AppleWatchSeries5 implements Watch, Dig
 	}
 
 	public void abstractClassInfo() {
-		System.out.println("An abstract class inherit only one abstract class by extends keyword"
-				+ "\n An abstract class inherit only one regular class by extends keyword"
-				+ "\n An abstract class can inherit more than one interfaces by implements keyword(separated by comma)"
-				+ "\n An abstract class can not inherit interface with extends keyword");
+		System.out.println("\nAn abstract class inherit only one abstract class by extends keyword"
+				+ "\nAn abstract class inherit only one regular class by extends keyword"
+				+ "\nAn abstract class can inherit more than one interfaces by "
+				+ "\nimplements keyword(separated by comma)"
+				+ "\nAn abstract class can not inherit interface with extends keyword");
 	}
 
 	public abstract void appleWatchInfo();
 
 	/*
-	 * yes I can create a varibale and constructor inside Abstract class and
+	 * yes I can create a variable and constructor inside Abstract class and
 	 * instantiate it.
-	 */
-
-	/*
-	 * Create 2 method: One is abstractClassInfo [which is a non-abstract method,
-	 * print out all the features of an abstract class compared with Interface,
-	 * regular class]. what type of method would be the other one if the name is
-	 * appleWatchInfo? Please create this method
 	 */
 
 }

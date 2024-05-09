@@ -6,42 +6,37 @@ public class ConfiguredIphone6 extends Iphone6 {
 	public void material() {// void
 
 	}
+
 	@Override
 	public int material(int ramPrice, int cameraPrice) {
-		System.out.println(ramPrice+90*cameraPrice);
-	
+		System.out.println("total: " + (ramPrice + 90 * cameraPrice + 20));
+
 		return 0;
 	}// return type parameterized
+
 	@Override
-	public int material(int ramPrice,  int cameraPrice,String processorPrice) {
-		int total = ramPrice*100 + Integer.parseInt(processorPrice+cameraPrice)+300;
+	public int material(int ramPrice, int cameraPrice, String processorPrice) {
+		int total =(ramPrice+ Integer.parseInt(processorPrice + cameraPrice) + 300);
+		System.out.println("total: " + total);
 		return total;
-	}// return type  parameteraized
+	}// return type parameteraized
+
 	@Override
-	public void material(int ramPrice,String processoPrice) {// void parameterized
-		
-System.out.println(ramPrice+Integer.parseInt(processoPrice)+20000);
+	public void material(int ramPrice, String processoPrice) {// void parameterized
+
+		System.out.println("total : " +( ramPrice + Integer.parseInt(processoPrice) + 20000));
 	}
-//	@Override
-//	public static int material(int ramPrice) {// Static return type parameterised method
-//		return 0;
-//
-//	}
-	 /* Final type method cannot be Overriden
-	  *  Cannot override the final method from Iphone6
-	 *  Final keyword doesn't allow any change in method, variable, class
+
+	/*
+	 * Final type method cannot be Overriden \n Cannot override the final method
+	 * from Iphone6 Final keyword doesn't allow any change in method, variable,
+	 * class
 	 */
-	
-	
-//	@Override
-//	public final int material(int ramPrice, int cameraPrice, int monitorPrice, String processorPrice) {// final return
-//																										// type
-//																										// parameterised
-//																										// method
-//		return 0;
-//
-//	}
-	
-	
-	
-	}
+
+	/*
+	 * Static type method cannot be Overriden because static is a local member
+	 * method of a class So, static method can't be override * if we
+	 * remove @override it will work as it is considered as the static method of
+	 * this ConfiguredIphone6 class
+	 */
+}

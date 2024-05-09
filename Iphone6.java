@@ -2,21 +2,9 @@ package oopExam;
 
 public class Iphone6 extends Iphone5 {
 	public void compass() {
-		System.out.println("\tThe Compass app shows you the direction iPhone is pointing,"
-				+ "\n\t your current location, and elevation.");
+		System.out.println("\nThe Compass app shows you the direction iPhone is pointing,"
+				+ "\nyour current location, and elevation.");
 	}
-
-	/*
-	 * 
-	 * 
-	 * What kind of concept you can use to relate to Iphone1 to 6? Instantiate
-	 * Iphone6 in TestPhone and show how many methods they can call in TestPhone.
-	 * [points: 70] .
-	 * 
-	 * Sazzad vaia:write in the testphone
-	 */
-
-
 
 	public int ramPrice;
 	public int cameraPrice;
@@ -31,12 +19,13 @@ public class Iphone6 extends Iphone5 {
 		return 0;
 	}// return type parameterized
 
-	public int material(int ramPrice,  int cameraPrice,String processorPrice) {
-		int total = ramPrice + Integer.parseInt(processorPrice+cameraPrice);
-		return total;
-	}// return type  parameteraized
+	public int material(int ramPrice, int cameraPrice, String processorPrice) {
+		int total1 = ramPrice + Integer.parseInt(processorPrice + cameraPrice);
+		System.out.println("total is : " + total1);
+		return total1;
+	}// return type parameteraized
 
-	public void material(int ramPrice,String processoPrice) {// void parameterized
+	public void material(int ramPrice, String processoPrice) {// void parameterized
 
 	}
 
@@ -65,16 +54,5 @@ public class Iphone6 extends Iphone5 {
 	 * different methods exist with the same method name with same parameters or
 	 * signature but with different syntax or logic, it is called method overriding.
 	 */
-	/*
 
-	 *  [points: 70]. Now think about a regular class Name ConfiguredIphone6
-	 * which extends Iphone6. Override those methods of Iphone6 and change the logic
-	 * at your own to show the changes. [points: 50]. Show the output in TestPhone
-	 * (how many methods is possible to extends). [points: 50].
-	 * 
-	 * Please make sure you organize the code in every class
-	 * 
-	 * Paste the github link for the package below
-	 * 
-	 */
 }

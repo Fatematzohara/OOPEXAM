@@ -12,10 +12,10 @@ public class TestPhone {
 		System.out.println("I bought this phone in " + iphone1.getInfo() + ", the price was " + iphone1.getPrice()
 				+ "$, user's sex: " + iphone1.getUser() + " made in USA is: " + iphone1.getMadeInUSA());
 
-//AppleWatch appleWatch = new AppleWatch();
+		// AppleWatch appleWatch = new AppleWatch();
 		// We cannot Instantiation abstract class
 
-//		Phone phone =new Phone();
+		// Phone phone =new Phone();
 		// We cannot instantiate interface
 
 		Iphone2 iphone2 = new Iphone2();
@@ -47,13 +47,50 @@ public class TestPhone {
 		iphone6.compass();
 		iphone6.material();
 		iphone6.material(0, 0);
-		iphone6.material(0, null);
-		iphone6.material(0, 0, null);
-		iphone6.material(0, 0, 0, null);
+		iphone6.material(0, "30");
+		iphone6.material(0, 0, "100");
+		iphone6.material(0, 0, 0, "60");
 		Iphone6.material(0);// static
-		iphone6.appleWatchInfo();
 		iphone6.appleWatchSeries5();
+		iphone6.abstractClassInfo();
+		iphone6.battery();
+		iphone6.iPhone2Info('M');
 
+		ConfiguredIphone6 conIphone6 = new ConfiguredIphone6();
+		conIphone6.setInfo(null);
+		conIphone6.setPrice(0);
+		conIphone6.setMadeInUSA(false);
+		conIphone6.setUser('F');
+		conIphone6.getInfo();
+		conIphone6.getMadeInUSA();
+		conIphone6.getPrice();
+		conIphone6.getUser();
+		conIphone6.regularClassInfo();
+		conIphone6.youtube();
+		conIphone6.iPhone2Info();
+		conIphone6.dropbox();
+		conIphone6.photos();
+		conIphone6.email();
+		conIphone6.call();
+		conIphone6.camera();
+		conIphone6.pager();
+		conIphone6.wakiToki();
+		conIphone6.watch();
+		conIphone6.digitalWatch();
+		conIphone6.interfaceInfo();
+		conIphone6.call();
+		conIphone6.message();
+		conIphone6.iPhone2Info();
+		conIphone6.compass();
+		conIphone6.material();
+		conIphone6.material(0, 0);
+		conIphone6.material(0, "30");
+		conIphone6.material(0, 0, "100");
+		conIphone6.material(0, 0, 0, "60");
+		conIphone6.appleWatchSeries5();
+		conIphone6.abstractClassInfo();
+		conIphone6.battery();
+		conIphone6.iPhone2Info('M');
 		/*
 		 * iphone6 inherits from iphone 5,It is called single inheritance \niphone6
 		 * inherits from iphone5, iphone5 inherits from iphone4, iphone4 inherits from
